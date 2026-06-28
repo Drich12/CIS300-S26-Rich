@@ -1,0 +1,184 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF5F7;
+  color: #4A2E35;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  background-color: #FFFFFF;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+
+header {
+  border-bottom: 2px solid #4A2E35;
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.logo-placeholder {
+  border: 2px dashed #FF8DA1;
+  padding: 1em;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FF8DA1;
+  border-radius: 4px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #D94162;
+  letter-spacing: 0.05em;
+}
+
+
+nav {
+  border-bottom: 2px solid #4A2E35;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav li {
+  border-bottom: 1px solid #FFCCD5;
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
+
+nav a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #4A2E35;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #FFE5EC;
+}
+
+
+main {
+  padding: 2.5em 2em;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 1.8em;
+  margin-top: 0;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #7A5C63;
+  margin-bottom: 3em;
+}
+
+
+.photo-grid-title {
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+.photo-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-bottom: 2em;
+}
+
+.photo-card {
+  border: 2px solid #4A2E35;
+  background-color: #FFF0F3;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.photo-card .cross {
+  font-size: 2em;
+  color: #4A2E35;
+  font-weight: 300;
+}
+
+
+footer {
+  border-top: 2px solid #4A2E35;
+  padding: 3em 1em;
+  background-color: #FFFFFF;
+}
+
+.contact-box {
+  border: 2px solid #4A2E35;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.contact-box p {
+  margin: 0.5em 0;
+}
+
+.contact-box a {
+  color: #D94162;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-label {
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+
+@media (min-width: 650px) {
+  nav ul {
+    flex-direction: row;
+  }
+  
+  nav li {
+    flex: 1;
+    border-bottom: none;
+    border-right: 2px solid #4A2E35;
+  }
+  
+  nav li:last-child {
+    border-right: none;
+  }
+  
+  .photo-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .photo-card {
+    flex: 1;
+  }
+}
